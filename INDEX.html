@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entregable Bios 2024</title>
+
+    <link rel="stylesheet" href="styles.css">
+    
+    <script src="script.js"></script>
+   
+</head>
+<body class="body">
+    <!-- Comentario: aquí esta el header con el título "To Do List"-->
+<header class="header">
+    <title>To-Do List</title>
+    <h1>Entregable BIOS</h1>
+    <h4>Santiago Díaz Arbiza</h4>
+</header> 
+<!-- comentario: Aqui esta el formulario con method "POST"-->
+<form name="miFormulario" action=submit enctype="text/plain" method="POST"> 
+
+
+<!-- Comentario: Sección main con <input> <button> y <ul> -->
+<section id="main" class="main">
+    <label for="tarea1">Ingrese tareas a la lista:</label>
+<input type="text" name="tarea1" id="tarea1" placeholder="tarea" class="texto">
+</input>
+<br>
+<br>
+
+<input type="button" value="Agregar"  class="boton" onclick="Agregar(tarea1.value)"></input>
+<input type="button" value="Completar" class="boton" onclick="completar()"> </input>
+
+<input type="button" value="Eliminar" class="boton" onclick="Eliminar()">
+</input>
+
+</section>
+<!-- comentario: Aqui hacemos la lista -->
+<ul class="lista">
+    Lista de tareas
+    <li><input type="checkbox" id= "cbox1" name="cbox1"> <p id="HOJA1"> </p> </li>
+    <li><input type="checkbox" id= "cbox2" name="cbox2"><p id="HOJA2"> </p>  </li>
+    <li><input type="checkbox" id= "cbox3" name="cbox3"> <p id="HOJA3"> </p> </li>   
+ </ul>
+</form>
+
+</body>
+</html>
